@@ -687,7 +687,7 @@ def do (commline):
         else:
             print('lexical/syntax errors; no IC---check the log file')
     elif comm == 'm':
-        fn = str(args[0])+'.lisp'
+        fn = str(args[0])
         ch = False
         if os.path.exists(fn):
             ch = input(f"file {fn} exists, overwrite (y/*n)? ")
